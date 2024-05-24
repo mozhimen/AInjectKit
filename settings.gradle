@@ -24,3 +24,7 @@ rootProject.name = "AInjectKit"
 include ':app'
 include ':injectk_dagger'
 include ':injectk_hilt'
+include ':injectk_hilt_work'
+include ':injectk_hilt_navigation'
+include ':injectk_hilt_navigation_compose'
+include ':injectk_hilt_navigation_fragment'
