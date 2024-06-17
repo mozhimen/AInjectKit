@@ -28,3 +28,8 @@ include ':injectk_hilt_work'
 include ':injectk_hilt_navigation'
 include ':injectk_hilt_navigation_compose'
 include ':injectk_hilt_navigation_fragment'
+include ':injectk_hilt_startup'
+//ALibKit_Jetpack
+include ':ALibKit_Jetpack'
+project(':ALibKit_Jetpack').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Jetpack")
+include ':ALibKit_Jetpack:startup'
