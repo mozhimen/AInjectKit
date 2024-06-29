@@ -33,3 +33,4 @@ include ':injectk_hilt_startup'
 include ':ALibKit_Jetpack'
 project(':ALibKit_Jetpack').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Jetpack")
 include ':ALibKit_Jetpack:startup'
+include ':ALibKit_Jetpack:hilt_work'
