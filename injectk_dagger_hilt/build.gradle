@@ -1,11 +1,12 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+//    id 'com.google.dagger.hilt.android'
 //    id 'kotlin-kapt'
 }
 
 android {
-    namespace 'com.mozhimen.injectk.dagger'
+    namespace 'com.mozhimen.injectk.dagger.hilt'
     compileSdk 34
 
     defaultConfig {
@@ -32,9 +33,13 @@ android {
 }
 
 dependencies {
-    api project(':ALibKit_Google:dagger')
-//    kapt "com.google.dagger:dagger-android-processor:2.19"
-//    kapt "com.google.dagger:dagger-compiler:2.19"
+    //hilt
+    api project(':ALibKit_Google:dagger_hilt')
+//    kapt 'com.google.dagger:hilt-compiler:2.46.1'
+
+    /**
+     * classpath 'com.google.dagger:hilt-android-gradle-plugin:2.46.1'
+     */
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

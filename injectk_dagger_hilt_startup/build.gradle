@@ -1,16 +1,16 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
-//    id 'kotlin-kapt'
+    id 'com.google.dagger.hilt.android'
+    id 'kotlin-kapt'
 }
 
 android {
-    namespace 'com.mozhimen.injectk.dagger'
+    namespace 'com.mozhimen.injectk.dagger.hilt.startup'
     compileSdk 34
 
     defaultConfig {
         minSdk 19
-        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -32,9 +32,10 @@ android {
 }
 
 dependencies {
-    api project(':ALibKit_Google:dagger')
-//    kapt "com.google.dagger:dagger-android-processor:2.19"
-//    kapt "com.google.dagger:dagger-compiler:2.19"
+    kapt 'com.google.dagger:hilt-compiler:2.50'
+    implementation 'com.google.dagger:hilt-android:2.50'
+    implementation project(project.path.replace(project.name, '') + ':injectk_dagger_hilt')
+    implementation project(':ALibKit_Jetpack:startup')
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
