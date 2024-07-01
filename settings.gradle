@@ -25,13 +25,22 @@ include ':app'
 include ':injectk_dagger'
 include ':injectk_dagger_hilt'
 include ':injectk_dagger_hilt_startup'
+include ':injectk_dagger_hilt_startup_test'
 //ALibKit_Jetpack
 include ':ALibKit_Jetpack'
 project(':ALibKit_Jetpack').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Jetpack")
 include ':ALibKit_Jetpack:startup'
+include ':ALibKit_Jetpack:hilt'
 include ':ALibKit_Jetpack:hilt_work'
+include ':ALibKit_Jetpack:work'
 //ALibKit_Google
 include ':ALibKit_Google'
 project(':ALibKit_Google').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Google")
 include ':ALibKit_Google:dagger'
 include ':ALibKit_Google:dagger_hilt'
+//SwiftKit
+include ':SwiftKit'
+project(':SwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\SwiftKit")
+include ':SwiftKit:basick'
+include ':injectk_androidx_hilt'
+include ':injectk_androidx_hilt_work'

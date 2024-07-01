@@ -1,12 +1,10 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
-    id 'com.google.dagger.hilt.android'
-    id 'kotlin-kapt'
 }
 
 android {
-    namespace 'com.mozhimen.injectk.dagger.hilt.startup'
+    namespace 'com.mozhimen.injectk.androidx.hilt.work'
     compileSdk 34
 
     defaultConfig {
@@ -33,10 +31,7 @@ android {
 }
 
 dependencies {
-    kapt 'com.google.dagger:hilt-compiler:2.50'
-    implementation 'com.google.dagger:hilt-android:2.50'
-    implementation project(project.path.replace(project.name, '') + ':injectk_dagger_hilt')
-    implementation project(':ALibKit_Jetpack:startup')
+    api project(':ALibKit_Jetpack:hilt_work')
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

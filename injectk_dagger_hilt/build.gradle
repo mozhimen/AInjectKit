@@ -35,10 +35,10 @@ android {
 dependencies {
     //hilt
     api project(':ALibKit_Google:dagger_hilt')
-//    kapt 'com.google.dagger:hilt-compiler:2.46.1'
+//    kapt 'com.google.dagger:hilt-compiler:2.50'
 
     /**
-     * classpath 'com.google.dagger:hilt-android-gradle-plugin:2.46.1'
+     * classpath 'com.google.dagger:hilt-android-gradle-plugin:2.50'
      */
 
     testImplementation 'junit:junit:4.13.2'
