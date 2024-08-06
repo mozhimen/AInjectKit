@@ -26,6 +26,9 @@ include ':injectk_dagger'
 include ':injectk_dagger_hilt'
 include ':injectk_dagger_hilt_startup'
 include ':injectk_dagger_hilt_startup_test'
+include ':injectk_androidx_hilt'
+include ':injectk_androidx_hilt_work'
+include ':injectk_dagger_hilt_test'
 //ALibKit_Jetpack
 include ':ALibKit_Jetpack'
 project(':ALibKit_Jetpack').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Jetpack")
@@ -42,5 +45,5 @@ include ':ALibKit_Google:dagger_hilt'
 include ':SwiftKit'
 project(':SwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\SwiftKit")
 include ':SwiftKit:basick'
-include ':injectk_androidx_hilt'
-include ':injectk_androidx_hilt_work'
+include ':SwiftKit:xmlk'
+
