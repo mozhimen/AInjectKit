@@ -10,7 +10,7 @@ import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.PeriodicWorkRequest
 import androidx.work.PeriodicWorkRequestBuilder
 import androidx.work.WorkerParameters
-import com.mozhimen.basick.utilk.commons.IUtilK
+import com.mozhimen.kotlin.utilk.commons.IUtilK
 import com.mozhimen.injectk.dagger.hilt.startup.test.service.CrashTrackerService
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedInject

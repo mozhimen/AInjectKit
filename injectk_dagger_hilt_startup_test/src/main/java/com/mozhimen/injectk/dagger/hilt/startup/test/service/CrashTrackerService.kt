@@ -1,6 +1,6 @@
 package com.mozhimen.injectk.dagger.hilt.startup.test.service
 
-import com.mozhimen.basick.utilk.android.util.UtilKLogWrapper
+import com.mozhimen.kotlin.utilk.android.util.UtilKLogWrapper
 
 class CrashTrackerService {
 

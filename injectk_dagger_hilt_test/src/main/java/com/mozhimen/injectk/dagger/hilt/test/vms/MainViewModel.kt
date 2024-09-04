@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.mozhimen.basick.elemk.androidx.lifecycle.bases.BaseViewModel
+import com.mozhimen.kotlin.elemk.androidx.lifecycle.bases.BaseViewModel
 import com.mozhimen.injectk.dagger.hilt.test.commons.IGetValueListener
 import com.mozhimen.injectk.dagger.hilt.test.helpers.CacheRepository
 import com.mozhimen.injectk.dagger.hilt.test.helpers.RemoteRepository
