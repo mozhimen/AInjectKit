@@ -1,6 +1,8 @@
 package com.mozhimen.injectk.dagger.hilt.startup.commons
 
 import android.content.Context
+import com.mozhimen.injectk.dagger.hilt.startup.bases.BaseHiltInitializer
+import com.mozhimen.injectk.dagger.hilt.startup.optins.OApiCall_InitializerEntryPointResolve
 import dagger.hilt.android.EntryPointAccessors
 
 /**
@@ -13,15 +15,12 @@ import dagger.hilt.android.EntryPointAccessors
 //@EntryPoint
 //@InstallIn(SingletonComponent::class) //<-- installing in the ApplicationComponent !!
 interface IInitializerEntryPoint {
-
-//    fun inject(initializer: BaseHiltInitializer)
-
-//    companion object {
+    companion object {
         //a helper method to resolve the InitializerEntryPoint from the context
-//        @JvmStatic
-//        fun resolve(context: Context): IInitializerEntryPoint {
-//            val appContext = context.applicationContext ?: throw IllegalStateException()
-//            return EntryPointAccessors.fromApplication(appContext, IInitializerEntryPoint::class.java)
-//        }
-//    }
+        @JvmStatic
+        inline fun <reified T : IInitializerEntryPoint> resolve(context: Context): T {
+            val appContext = context.applicationContext ?: throw IllegalStateException()
+            return EntryPointAccessors.fromApplication(appContext, T::class.java)
+        }
+    }
 }

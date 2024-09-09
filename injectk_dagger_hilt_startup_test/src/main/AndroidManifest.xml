@@ -27,19 +27,19 @@
             tools:node="merge">
 
             <meta-data
-                android:name="com.mozhimen.injectk.dagger.hilt.startup.test.initializer.DependencyGraphInitializer"
+                android:name="com.mozhimen.injectk.dagger.hilt.startup.test.startups.DependencyGraphInitializer"
                 android:value="androidx.startup" />
 
             <meta-data
-                android:name="com.mozhimen.injectk.dagger.hilt.startup.test.initializer.CrashTrackerInitializer"
+                android:name="com.mozhimen.injectk.dagger.hilt.startup.test.startups.WorkManagerInitializer"
                 android:value="androidx.startup" />
 
             <meta-data
-                android:name="com.mozhimen.injectk.dagger.hilt.startup.test.initializer.WorkManagerInitializer"
+                android:name="com.mozhimen.injectk.dagger.hilt.startup.test.startups.MyInjectInitializer"
                 android:value="androidx.startup" />
 
             <meta-data
-                android:name="com.mozhimen.injectk.dagger.hilt.startup.test.initializer.MyTaskInitializer"
+                android:name="com.mozhimen.injectk.dagger.hilt.startup.test.startups.MyTaskInitializer"
                 android:value="androidx.startup" />
 
             <meta-data

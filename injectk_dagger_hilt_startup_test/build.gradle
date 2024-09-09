@@ -32,10 +32,13 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures{
+        viewBinding true
+    }
 }
 
 dependencies {
-    implementation project(':SwiftKit:basick')
+    implementation project(':SwiftKit:mvvmk')
 
     implementation project(':injectk_dagger_hilt')
     implementation 'com.google.dagger:hilt-android:2.50'
