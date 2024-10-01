@@ -2,7 +2,7 @@ package com.mozhimen.injectk.dagger.hilt.test.uis
 
 import android.os.Bundle
 import androidx.activity.viewModels
-import com.mozhimen.mvvmk.bases.activity.databinding.BaseActivityVDB
+import com.mozhimen.bindk.bases.activity.databinding.BaseActivityVDB
 import com.mozhimen.injectk.dagger.hilt.test.databinding.ActivityMainBinding
 import com.mozhimen.injectk.dagger.hilt.test.mos.ActivityBean
 import com.mozhimen.injectk.dagger.hilt.test.vms.MainViewModel

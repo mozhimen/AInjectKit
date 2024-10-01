@@ -7,7 +7,7 @@ import androidx.work.WorkManager
 import com.mozhimen.injectk.dagger.hilt.startup.test.databinding.ActivityMainBinding
 import com.mozhimen.injectk.dagger.hilt.startup.test.helpers.TaskRepository
 import com.mozhimen.injectk.dagger.hilt.startup.test.works.MyWorker
-import com.mozhimen.mvvmk.bases.activity.viewbinding.BaseActivityVB
+import com.mozhimen.bindk.bases.activity.viewbinding.BaseActivityVB
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
