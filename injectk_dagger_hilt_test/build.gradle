@@ -44,8 +44,8 @@ android {
 }
 
 dependencies {
-    implementation project(':SwiftKit:basick')
-    implementation project(':SwiftKit:xmlk')
+    implementation project(':ASwiftKit:basick')
+    implementation project(':ASwiftKit:xmlk')
     implementation project(':injectk_dagger_hilt')
 
     implementation 'com.google.dagger:hilt-android:2.50'

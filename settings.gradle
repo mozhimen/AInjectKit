@@ -41,12 +41,12 @@ include ':ALibKit_Google'
 project(':ALibKit_Google').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Google")
 include ':ALibKit_Google:dagger'
 include ':ALibKit_Google:dagger_hilt'
-//SwiftKit
-include ':SwiftKit'
-project(':SwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\SwiftKit")
-include ':SwiftKit:basick'
-include ':SwiftKit:xmlk'
-include ':SwiftKit:bindk'
+//ASwiftKit
+include ':ASwiftKit'
+project(':ASwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ASwiftKit")
+include ':ASwiftKit:basick'
+include ':ASwiftKit:xmlk'
+include ':ASwiftKit:bindk'
 //KUtilKit
 include ':KUtilKit'
 project(':KUtilKit').projectDir = new File("D:\\WorkSpace\\GitHub\\KUtilKit")
