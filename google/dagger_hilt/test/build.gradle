@@ -1,26 +1,28 @@
 plugins {
-    id 'com.android.library'
+    id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'com.google.dagger.hilt.android'
     id 'kotlin-kapt'
 }
 
 android {
-    namespace 'com.mozhimen.injectk.dagger.hilt.startup'
+    namespace 'com.mozhimen.injectk.dagger.hilt.test'
     compileSdk 34
 
     defaultConfig {
-        minSdk 19
-        multiDexEnabled true
+        applicationId "com.mozhimen.injectk.dagger.hilt.test"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-//        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
         release {
             minifyEnabled false
-//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
     compileOptions {
@@ -30,13 +32,24 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        dataBinding true
+    }
+    hilt {
+        enableAggregatingTask = true
+    }
+    kapt {
+        correctErrorTypes true
+    }
 }
 
 dependencies {
-    kapt 'com.google.dagger:hilt-compiler:2.50'
+    implementation project(':ASwiftKit:basick')
+    implementation project(':ASwiftKit:xmlk')
+    implementation project(':google:dagger_hilt')
+
     implementation 'com.google.dagger:hilt-android:2.50'
-    implementation project(project.path.replace(project.name, '') + ':injectk_dagger_hilt')
-    implementation project(':ALibKit_Jetpack:startup')
+    kapt 'com.google.dagger:hilt-compiler:2.50'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

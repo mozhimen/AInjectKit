@@ -22,13 +22,24 @@ dependencyResolutionManagement {
 
 rootProject.name = "AInjectKit"
 include ':app'
-include ':injectk_dagger'
-include ':injectk_dagger_hilt'
-include ':injectk_dagger_hilt_startup'
-include ':injectk_dagger_hilt_startup_test'
-include ':injectk_androidx_hilt'
-include ':injectk_androidx_hilt_work'
-include ':injectk_dagger_hilt_test'
+include ':google:dagger'
+include ':google:dagger_hilt'
+include ':google:dagger_hilt:test'
+include ':google:dagger_hilt_startup'
+include ':google:dagger_hilt_startup:test'
+include ':jetpack:hilt'
+include ':jetpack:hilt_work'
+//ALibKit_Google
+include ':ALibKit_Google'
+project(':ALibKit_Google').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Google")
+include ':ALibKit_Google:material'
+include ':ALibKit_Google:dagger'
+include ':ALibKit_Google:dagger:hilt_android'
+//ALibKit_Jetbrains
+include ':ALibKit_Jetbrains'
+project(':ALibKit_Jetbrains').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Jetbrains")
+include ':ALibKit_Jetbrains:kotlin_stdlib'
+include ':ALibKit_Jetbrains:kotlinx_coroutines'
 //ALibKit_Jetpack
 include ':ALibKit_Jetpack'
 project(':ALibKit_Jetpack').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Jetpack")
@@ -36,20 +47,21 @@ include ':ALibKit_Jetpack:startup'
 include ':ALibKit_Jetpack:hilt'
 include ':ALibKit_Jetpack:hilt_work'
 include ':ALibKit_Jetpack:work'
-//ALibKit_Google
-include ':ALibKit_Google'
-project(':ALibKit_Google').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Google")
-include ':ALibKit_Google:dagger'
-include ':ALibKit_Google:dagger_hilt'
+include ':ALibKit_Jetpack:databinding'
+include ':ALibKit_Jetpack:core'
+include ':ALibKit_Jetpack:annotation'
+//KUtilKit
+include ':KUtilKit'
+project(':KUtilKit').projectDir = new File("D:\\WorkSpace\\GitHub\\KUtilKit")
+include ':KUtilKit:android'
+include ':KUtilKit:kotlin'
 //ASwiftKit
 include ':ASwiftKit'
 project(':ASwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ASwiftKit")
 include ':ASwiftKit:basick'
 include ':ASwiftKit:xmlk'
 include ':ASwiftKit:bindk'
-//KUtilKit
-include ':KUtilKit'
-project(':KUtilKit').projectDir = new File("D:\\WorkSpace\\GitHub\\KUtilKit")
-include ':KUtilKit:utilk_android'
-include ':KUtilKit:utilk_kotlin'
+
+
+
 
