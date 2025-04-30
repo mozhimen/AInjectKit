@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace 'com.mozhimen.injectk.dagger.hilt.test'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.mozhimen.injectk.dagger.hilt.test"
