@@ -1,4 +1,4 @@
-package com.mozhimen.study_hilt.dis
+package com.mozhimen.injectk.dagger.hilt.test.dis
 
 import com.mozhimen.injectk.dagger.hilt.test.helpers.CacheRepository
 import dagger.Module
