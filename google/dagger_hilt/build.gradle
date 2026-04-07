@@ -34,7 +34,7 @@ android {
 
 dependencies {
     //hilt
-    api project(':ALibKit_Google:dagger:hilt_android')
+    api 'com.github.mozhimen.ALibKit_Google:dagger-hilt_android:0.0.5'
 //    kapt 'com.google.dagger:hilt-compiler:2.50'
 
     /**
