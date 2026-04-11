@@ -34,16 +34,6 @@ include ':ALibKit_Jetbrains'
 project(':ALibKit_Jetbrains').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Jetbrains")
 include ':ALibKit_Jetbrains:kotlin_stdlib'
 include ':ALibKit_Jetbrains:kotlinx_coroutines'
-//ALibKit_Jetpack
-include ':ALibKit_Jetpack'
-project(':ALibKit_Jetpack').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Jetpack")
-include ':ALibKit_Jetpack:startup'
-include ':ALibKit_Jetpack:hilt'
-include ':ALibKit_Jetpack:hilt_work'
-include ':ALibKit_Jetpack:work'
-include ':ALibKit_Jetpack:databinding'
-include ':ALibKit_Jetpack:core'
-include ':ALibKit_Jetpack:annotation'
 //KUtilKit
 include ':KUtilKit'
 project(':KUtilKit').projectDir = new File("D:\\WorkSpace\\GitHub\\KUtilKit")

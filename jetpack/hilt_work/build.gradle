@@ -31,7 +31,7 @@ android {
 }
 
 dependencies {
-    api project(':ALibKit_Jetpack:hilt-work')
+    api 'com.github.mozhimen.ALibKit_Jetpack:hilt-work:0.0.7'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

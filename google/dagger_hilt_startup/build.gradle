@@ -44,7 +44,7 @@ dependencies {
     }else {
         implementation project(/*project.path.replace(project.name, '') + */':AInjectKit:google:dagger_hilt')
     }
-    implementation project(':ALibKit_Jetpack:startup-runtime')
+    implementation 'com.github.mozhimen.ALibKit_Jetpack:startup-runtime:0.0.7'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

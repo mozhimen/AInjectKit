@@ -42,7 +42,7 @@ android {
 }
 
 dependencies {
-    implementation project(':ASwiftKit:uik:databinding')
+    implementation 'com.github.mozhimen.ASwiftKit:uik-databinding:2.0.4'
 
     implementation project(':google:dagger_hilt')
     implementation 'com.google.dagger:hilt-android:2.50'
@@ -52,8 +52,8 @@ dependencies {
     kapt 'androidx.hilt:hilt-compiler:1.1.0'
 
     implementation project(':google:dagger_hilt_startup')
-    implementation project(':ALibKit_Jetpack:hilt_work')
-    implementation project(':ALibKit_Jetpack:work')
+    implementation 'com.github.mozhimen.ALibKit_Jetpack:hilt-work:0.0.7'
+    implementation 'com.github.mozhimen.ALibKit_Jetpack:work-runtime-bom:0.0.7'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
